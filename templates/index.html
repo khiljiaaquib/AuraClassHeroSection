@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AuraClass | AI powered Attendance System</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="{{url_for('static',filename='image/image.png')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="navbar">
+<div class="logo">
+    <img src="{{url_for('static',filename='image/image.png')}}" style="height:32px;" alt="AuraClass Logo">
+    <div class="logo_text">AuraClass</div>
+</div>
+<div class="nav_links">
+    <a href="#">Home</a>
+    <a href="#features">Features</a>
+    <a href="#journey">Journey</a>
+    <a href="#tech">Tech Stack</a>
+</div>
+<div class="nav_cts">
+    <a href="https://auraclass.streamlit.app" class="btn_pill">
+    Start AI Attendance
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg>
+    </a>
+</div>
+    </nav>
+<header class="hero">
+    <div class="badge">
+        Welcome to AuraClass
+    </div>
+    <h1>AI Powered <br>Attendance <Span>System</Span></h1>
+    <p>Revolutionizing the classroom with next-gen computer vision and voice biometrics.Trusted by educators for speed , accuracy and security</p>
+    <div class="hero_action">
+        <a href="https://auraclass.streamlit.app" class="btn_cta">
+    Start AI Attendance
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg>
+    </a>
+    <a href="journey" class="link_action">Explore Journey</a>
+    </div>
+    <div class="floating_card card_left">
+        <div class="card_img">
+            <img src="{{url_for('static',filename='image/attendance_records.png')}}" alt="landing image 1">
+        </div>
+    </div>
+    <div class="floating_card card_right">
+         <div class="card_img">
+                       <img src="{{url_for('static',filename='image/lander.png')}}" alt="landing image 1">
+        </div>
+    </div>
+</header>
+<section id="features" class="features">
+    <h2>Innovative Features</h2>
+    <div class="feature_grid">
+        <div class="feature_card">
+            <div class="f_icon_box">
+                    📸
+            </div>
+            <h3>
+                AI Face Analysis
+            </h3>
+            <p>
+                Advanced neural networks recognize every student's face from a single class photo, making attendance instant and accurate.
+            </p>
+        </div>
+         <div class="feature_card">
+            <div class="f_icon_box">
+                    🎙️
+            </div>
+            <h3>
+                Sequential Voice ID
+            </h3>
+            <p>
+            Students say 'Present' one-by-one and our audio_AI matches their voice biometrics against stored embeddings in real_time.
+            </p>
+        </div> <div class="feature_card">
+            <div class="f_icon_box">
+                  ⛆
+            </div>
+            <h3>
+                QR-Driven Roster
+            </h3>
+            <p>
+                Course codes generate unique QR codes for instant student enrollment.No more manual entry or data management headaches.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="journey" class="teacher_flow">
+    <div class="flow_container">
+        <div class="section_tag" style="text-align: center;margin-bottom:40px;display:block;">-- Work Flow --
+        </div>
+        <h2 style="text-align: center;font-size:3.5rem;margin-bottom:80px;">The Teacher's Journey
+        </h2>
+        <div class="flow_step">
+            <div class="flow_content">
+                <div class="step_badge">
+                    step 01
+                </div>
+                <h3>Secure Login</h3>
+                <p>Start your session with our high-security authentication portal. Your data is encrypted and synced across all your devices.</p>
+            </div>
+            <div class="flow_image">
+                <img src="{{url_for('static',filename='image/login.png')}}" alt="flow image">
+            </div>
+        </div>
+        
+        <div class="flow_step">
+            <div class="flow_content">
+                <div class="step_badge">
+                    step 02
+                </div>
+                <h3>Interactive Dashboard</h3>
+                <p>Manage all your subjects , attendance logs and student rosters from a single , beautiful unified stream.</p>
+            </div>
+            <div class="flow_image">
+                <img src="{{url_for('static',filename='image/dashboard.png')}}" alt="flow image">
+            </div>
+        </div>
+
+                <div class="flow_step">
+            <div class="flow_content">
+                <div class="step_badge">
+                    step 03
+                </div>
+                <h3>Course Manage</h3>
+                <p>Creating a new subject is a breeze , Just name it , and Aura Class generates everything you need to start tracking.</p>
+            </div>
+            <div class="flow_image">
+                <img src="{{url_for('static',filename='image/course.png')}}" alt="flow image">
+            </div>
+        </div>
+
+                <div class="flow_step">
+            <div class="flow_content">
+                <div class="step_badge">
+                    step 04
+                </div>
+                <h3>Face ID Attendance</h3>
+                <p>Use high speed computer vision to scan the entire room. Our AI identifies every student from a single class photo in milliseconds</p>
+            </div>
+            <div class="flow_image">
+                <img src="{{url_for('static',filename='image/face.png')}}" alt="flow image">
+            </div>
+        </div>
+
+                <div class="flow_step">
+            <div class="flow_content">
+                <div class="step_badge">
+                    step 05
+                </div>
+                <h3>Voice ID Attendance</h3>
+                <p>Switch to voice mode for a futuristic roll-call Students speak sequentially and our AI matches their unique voice signatures.</p>
+            </div>
+            <div class="flow_image">
+                <img src="{{url_for('static',filename='image/voice.png')}}" alt="flow image">
+            </div>
+        </div>
+        
+          <div class="flow_step">
+            <div class="flow_content">
+                <div class="step_badge">
+                    step 06
+                </div>
+                <h3>Actionable Records</h3>
+                <p>Review and manage historical tags . View Confidence scores,download CSV reports, and track long-term attendance trends.</p>
+            </div>
+            <div class="flow_image">
+                <img src="{{url_for('static',filename='image/attendance_records.png')}}" alt="flow image">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section id="tech" class="tech_stack">
+    <div class="section_tag">
+        -- Our Backend --
+    </div> 
+    <h2>
+        Advanced Tech Stack
+    </h2>
+    <div class="tech_grid">
+        <div class="tech_item">
+            <div class="tech_card">
+                <div class="t_icon">
+                    ⚡
+                </div>
+                <h4>
+                    Streamlit & Flask
+                </h4>
+                <p>
+                    Reactive Frontend Architecture Pairedwith a robust Flask Landing Layer.
+                </p>
+                 <span class="tech_tag">
+                Platform
+            </span>
+            </div>
+           
+        </div>
+         <div class="tech_item">
+            <div class="tech_card">
+                <div class="t_icon">
+                👁️
+                </div>
+                <h4>
+                    Face Registeration
+                </h4>
+                <p>
+                    Leveraging FaceRecognition and Dlib for high-fidelity facial biometrics.
+                </p>
+                <span class="tech_tag">
+                Vision AI
+            </span>
+            </div>
+            
+        </div> <div class="tech_item">
+            <div class="tech_card">
+                <div class="t_icon">
+                    🎙️
+                </div>
+                <h4>
+                    Voice Embeddings
+                </h4>
+                <p>
+                   Utilizing Resemblyzer and Librosa for unique student voice Signatures.
+                </p>
+                <span class="tech_tag">
+                Audio AI
+            </span>
+            </div>
+            
+        </div> <div class="tech_item">
+            <div class="tech_card">
+                <div class="t_icon">
+                    ☁️
+                </div>
+                <h4>
+                    Supabase Cloud
+                </h4>
+                <p>
+                    Real-time PostgreSQL infrastructure with secure auth and sync.
+                </p>
+                 <span class="tech_tag">
+                Storage
+            </span>
+            </div>
+           
+        </div>
+    </div>
+
+</section>
+<section id="student-journey" class="teacher_flow">
+    <div class="flow_container">
+        <div class="section_tag" style="text-align: center;margin-bottom:40px;display:block;">-- Student Flow --
+        </div>
+        <h2 style="text-align: center;font-size:3.5rem;margin-bottom:80px;">The Student's Journey
+        </h2>
+        <div class="flow_step">
+            <div class="flow_content">
+                <div class="step_badge">
+                    Phase 01
+                </div>
+                <h3>Biometric Registeration</h3>
+                <p>Students register their FaceID and Voice ID ones.Our AI securely stores their biometrics for all future class sessions.</p>
+            </div>
+            <div class="flow_image">
+                <img src="{{url_for('static',filename='image/student_login.png')}}" alt="flow image">
+            </div>
+        </div>
+        <div class="flow_step">
+            <div class="flow_content">
+                <div class="step_badge">
+                    Phase 02
+                </div>
+                <h3>Instant Enrollment</h3>
+                <p>Students join courses in seconds using unique QR codes or Course links provided by their teachers. No tedious sign-up forms.</p>
+            </div>
+            <div class="flow_image">
+                <img src="{{url_for('static',filename='image/QuickEnroll.png')}}" alt="flow image">
+            </div>
+        </div>
+
+                <div class="flow_step">
+            <div class="flow_content">
+                <div class="step_badge">
+                    Phase 03
+                </div>
+                <h3>Personal Dashboard</h3>
+                <p> unified view for students to track their attendance percentage across all subjects  and receive real-time updates.</p>
+            </div>
+            <div class="flow_image">
+                <img src="{{url_for('static',filename='image/personal_dash.png')}}" alt="flow image">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="purple_section">
+    <h2>Ready to Upgrade your Classroom?</h2>
+    <p>Join thousands of educatore who have simplified their day with AuraClass. The smartest AI powered Attendance system is just one click away</p>
+    <a href="" class="btn_white">Start AI Attendance Now</a>
+</section>
+<footer class="main_footer">
+    <div class="footer_grid">
+        <div class="footer_brand">
+<div class="logo">
+    <img src="{{url_for('static',filename='image/image.png')}}" style="height:32px;" alt="AuraClass Logo">
+    <div class="logo_text">AuraClass</div>
+</div>
+<p>
+    The next generation of classroom management , powered by advanced AI biometrics . 
+    join the future of education today.
+</p>
+        </div>
+        <div class="footer_links">
+<h4>
+    Products
+</h4>
+<ul>
+    <li>
+        <a href="#features">AI Attendance</a>
+    </li>
+    <li>
+        <a href="#features">Smart Roster</a>
+    </li><li>
+        <a href="#tech">Tech Stack</a>
+    </li><li>
+        <a href="#student-journey">Student Portal</a>
+    </li>
+</ul>
+        </div>
+        <div class="footer_links">
+<h4>
+    Experience
+</h4>
+<ul>
+    <li>
+        <a href="#journey">Teacher Journey
+        </a>
+    </li>
+    <li>
+        <a href="#student-journey">Student Journey</a>
+    </li><li>
+        <a href="#features">Voice ID Roll-call</a>
+    </li><li>
+        <a href="#features">Face ID Scan</a>
+    </li>
+</ul>
+        </div>
+        <div class="footer_links">
+<h4>
+    Company
+</h4>
+<ul>
+    <li>
+        <a href="#features">About US</a>
+    </li>
+    <li>
+        <a href="#features">how it works</a>
+    </li><li>
+        <a href="#">Privacy Policy</a>
+    </li><li>
+        <a href="#">Terms of use</a>
+    </li>
+</ul>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <p>
+          &copy;   2026 AuraClass AI. Built with ❤️ by Aaquib Khilji
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
